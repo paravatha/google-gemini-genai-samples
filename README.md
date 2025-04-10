@@ -1,2 +1,2 @@
-# kaggle-google-gemini-genai-intensive-ourse
-GenAI Intensive Course from Kaggle using Google Gemini
+# google-gemini-genai-samples
+GenAI samples using Google Gemini
