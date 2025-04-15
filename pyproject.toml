@@ -1,0 +1,97 @@
+
+# Poetry-specific settings.
+[project]
+name = "google-gemini-gen-ai-samples"
+version = "0.1.0"
+description = "A collection of GenAI samples for Google Gemini."
+requires-python = "~=3.12"
+readme = "README.md"
+authors = []
+
+# Runtime dependencies of the project.
+dependencies = [
+    "requests",
+    "pandas",
+    "numpy",
+    "databricks-connect~=16.3.1",
+    "databricks-sdk~=0.49.0",
+    "mlflow~=2.21.3",
+    "scikit-learn~=1.4.2",
+
+    "google-genai~=1.10.0",
+]
+# Development dependencies of the project.
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "build",
+    "pre-commit",
+    "ruff",
+    "ipykernel",
+    "ipython",
+    "pre-commit",
+    "nbstripout",
+    "setuptools",
+]
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".ipynb_checkpoints",
+    ".ipynb",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pyenv",
+    ".pytest_cache",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".vscode",
+    ".databricks",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "*venv*",
+]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.11
+target-version = "py311"
+
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+# 1. Enable flake8-bugbear (`B`) rules, in addition to the defaults.
+select = ["E4", "E7", "E9", "F", "B"]
+
+# 2. Avoid enforcing line-length violations (`E501`)
+ignore = ["E501"]
+
+# 3. Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = ["B"]
+
+# 4. Ignore `E402` (import violations) in all `__init__.py` files, and in selected subdirectories.
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+"**/{tests,docs,tools}/*" = ["E402"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
