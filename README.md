@@ -1,2 +1,2 @@
 # google-gemini-genai-samples
-GenAI samples using Google Gemini
+GenAI sample project using Google Gemini
