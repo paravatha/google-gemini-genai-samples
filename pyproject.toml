@@ -17,6 +17,9 @@ dependencies = [
     "mlflow~=3.0.0rc1",
     "lagom~=2.7.5",
     "google-genai~=1.12.1",
+    "google-adk~=0.3.0",
+    "google-api-core~=2.24.2"
+
 ]
 # Development dependencies of the project.
 [dependency-groups]
