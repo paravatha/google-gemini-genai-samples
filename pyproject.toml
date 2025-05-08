@@ -35,6 +35,8 @@ dev = [
     "pre-commit",
     "nbstripout",
     "setuptools",
+    "rich",
+    "tqdm",
 ]
 
 [tool.uv]
