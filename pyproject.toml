@@ -54,3 +54,6 @@ docstring-code-format = true
 
 [tool.pyright]
 typeCheckingMode = "basic"
+
+[tool.ty.src]
+root = "./src"
