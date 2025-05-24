@@ -536,7 +536,7 @@ wheels = [
 
 [[package]]
 name = "google-adk"
-version = "0.4.0"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "authlib" },
@@ -560,9 +560,9 @@ dependencies = [
     { name = "tzlocal" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1d/d5/69185bb36fdce0c952101409c548ee9d258d7b014fd0b1d3650020adf158/google_adk-0.4.0.tar.gz", hash = "sha256:c134528dd45fd67b2b49ea550c135feef6758c29a9405983edec64ec72b1dd62", size = 1054057, upload-time = "2025-05-02T20:23:28.889Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/29/58/d04adcbd6c3c9feda372a79ebb7d4e1f8dc02fa2c5788420e84956851a58/google_adk-1.0.0.tar.gz", hash = "sha256:9a9efadd93c86031ebae44646f01abc347a3ed28079e94989d54c0cb77e68872", size = 1085619, upload-time = "2025-05-20T17:44:41.231Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/65/d9/cb41ace4db03d4d48f14443fde104ac1c7513b9351ba6618233223e3085f/google_adk-0.4.0-py3-none-any.whl", hash = "sha256:5edaf3049d98fbdafff5ccc48855a75d83ffe3c7644a865696364ecba18e97fd", size = 1175901, upload-time = "2025-05-02T20:23:27.042Z" },
+    { url = "https://files.pythonhosted.org/packages/11/66/8cf150b753bc3314d0581eee214291a55ffe89ce7d9b555cbf0ce84256b4/google_adk-1.0.0-py3-none-any.whl", hash = "sha256:b9409c87cf01cbeb6de31a7b2892556501ddb075642139d1b9762c7c714ef1d4", size = 1229825, upload-time = "2025-05-20T17:44:39.367Z" },
 ]
 
 [[package]]
@@ -817,11 +817,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "google-adk", specifier = "~=0.4.0" },
+    { name = "google-adk", specifier = "~=1.0.0" },
     { name = "google-api-core", specifier = "~=2.24.2" },
-    { name = "google-genai", specifier = "~=1.14.0" },
+    { name = "google-genai", specifier = "~=1.16.1" },
     { name = "lagom", specifier = "~=2.7.5" },
-    { name = "mlflow", specifier = "~=3.0.0rc1" },
+    { name = "mlflow", specifier = "~=3.0.0rc3" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "requests" },
@@ -846,7 +846,7 @@ dev = [
 
 [[package]]
 name = "google-genai"
-version = "1.14.0"
+version = "1.16.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -857,9 +857,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/00/ba/c8e4c0b60c6dda40e51e2125709d097c2609fce1389b4a05f40cdd51c1ec/google_genai-1.14.0.tar.gz", hash = "sha256:7c608de5bb173486a546f5ec4562255c26bae72d33d758a3207bb26f695d0087", size = 169938, upload-time = "2025-05-07T22:50:03.113Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ca/1f/1a52736e87b4a22afef615de45e2f509fbfb55c09798620b0c3f394076ef/google_genai-1.16.1.tar.gz", hash = "sha256:4b4ed4ed781a9d61e5ce0fef1486dd3a5d7ff0a73bd76b9633d21e687ab998df", size = 194270, upload-time = "2025-05-20T01:05:26.717Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/12/86/dde4cd028c8b0716b3f1f6d202647396a87a4ecbbdc7e4beb59b9d9284d3/google_genai-1.14.0-py3-none-any.whl", hash = "sha256:5916ee985bf69ac7b68c4488949225db71e21579afc7ba5ecd5321173b60d3b2", size = 168862, upload-time = "2025-05-07T22:50:01.296Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/31/30caa8d4ae987e47c5250fb6680588733863fd5b39cacb03ba1977c29bde/google_genai-1.16.1-py3-none-any.whl", hash = "sha256:6ae5d24282244f577ca4f0d95c09f75ab29e556602c9d3531b70161e34cd2a39", size = 196327, upload-time = "2025-05-20T01:05:24.831Z" },
 ]
 
 [[package]]
@@ -1374,15 +1374,6 @@ wheels = [
 ]
 
 [[package]]
-name = "markdown"
-version = "3.8"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/2f/15/222b423b0b88689c266d9eac4e61396fe2cc53464459d6a37618ac863b24/markdown-3.8.tar.gz", hash = "sha256:7df81e63f0df5c4b24b7d156eb81e4690595239b7d70937d0409f1b0de319c6f", size = 360906, upload-time = "2025-04-11T14:42:50.928Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/51/3f/afe76f8e2246ffbc867440cbcf90525264df0e658f8a5ca1f872b3f6192a/markdown-3.8-py3-none-any.whl", hash = "sha256:794a929b79c5af141ef5ab0f2f642d0f7b1872981250230e72682346f7cc90dc", size = 106210, upload-time = "2025-04-11T14:42:49.178Z" },
-]
-
-[[package]]
 name = "markdown-it-py"
 version = "3.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1511,7 +1502,7 @@ wheels = [
 
 [[package]]
 name = "mlflow"
-version = "3.0.0rc1"
+version = "3.0.0rc3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "alembic" },
@@ -1519,8 +1510,6 @@ dependencies = [
     { name = "flask" },
     { name = "graphene" },
     { name = "gunicorn", marker = "sys_platform != 'win32'" },
-    { name = "jinja2" },
-    { name = "markdown" },
     { name = "matplotlib" },
     { name = "mlflow-skinny" },
     { name = "numpy" },
@@ -1531,14 +1520,14 @@ dependencies = [
     { name = "sqlalchemy" },
     { name = "waitress", marker = "sys_platform == 'win32'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/a6/2991974ea4b4d72985c58ae801e68b632d88cc0ad6092df106392006c443/mlflow-3.0.0rc1.tar.gz", hash = "sha256:dc352426b4bfa18e12db9e7bcbe54adb91f0e3f9656d9e37224377b06ce05e36", size = 28381223, upload-time = "2025-04-25T11:39:31.29Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/99/dc/9a3852daf15b0cb048133dbc5aac7b64633a0dc39c1e842ea95ac06e4ef4/mlflow-3.0.0rc3.tar.gz", hash = "sha256:b5bd372698dfbbbb12eb7f82050659d5853ba630e748be985062b1da23ebb763", size = 24026965, upload-time = "2025-05-21T09:01:27.222Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/34/06ca33b32f52ce00d83616a61031192ec490b1d378a5e1ab5d67b5683286/mlflow-3.0.0rc1-py3-none-any.whl", hash = "sha256:4de4089033c6e8d62b39b81728e91a6898aeff03f968b02bebf9d54da460514b", size = 28999154, upload-time = "2025-04-25T11:39:27.268Z" },
+    { url = "https://files.pythonhosted.org/packages/cd/5f/38bff8c7cb2768298815f361b129cf8a32a9cdd0483154379a0c1e2aae9f/mlflow-3.0.0rc3-py3-none-any.whl", hash = "sha256:1ce97fad0d74b594a0d485da0d76b8e3d1664d1b9c116001752a2b3cde692e68", size = 24582905, upload-time = "2025-05-21T09:01:24.035Z" },
 ]
 
 [[package]]
 name = "mlflow-skinny"
-version = "3.0.0rc1"
+version = "3.0.0rc3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cachetools" },
@@ -1559,9 +1548,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "uvicorn" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/69/ba/9dbb4beaf6df77431f4373aeb77d1abc3ce46caad08ff6b454a4d19c318f/mlflow_skinny-3.0.0rc1.tar.gz", hash = "sha256:07d0d0826290c925f494b99a224bff0a27edd50a18358ba438ecd1850850bfe4", size = 5878963, upload-time = "2025-04-25T11:42:52.314Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/f4/95d182f9a96556c48bc3072d1d998d23599d03efc2ca558b811ffc38907d/mlflow_skinny-3.0.0rc3.tar.gz", hash = "sha256:5101f579083a2e0e770c7d380efec386a81a7e757a85b063cc478aafbde4538e", size = 1530123, upload-time = "2025-05-21T09:17:34.109Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1d/46/24991f91a365d639abaec239cb2f45702b15f6916577f6d3e3cd83be1073/mlflow_skinny-3.0.0rc1-py3-none-any.whl", hash = "sha256:72b8728218997c7012f4ac678dfbd851d53a1aa5093ce355fe1fb6a37abc61d9", size = 6247320, upload-time = "2025-04-25T11:42:50.247Z" },
+    { url = "https://files.pythonhosted.org/packages/0b/2e/6ca80b8b551e2c794b67afd71a30fb1d6039451583a757d3c90d4c18b3f6/mlflow_skinny-3.0.0rc3-py3-none-any.whl", hash = "sha256:5911afc8fb1a24afb5d4e27deb8c850dc1a05446dc34316260155c94f243ae2b", size = 1837989, upload-time = "2025-05-21T09:17:31.875Z" },
 ]
 
 [[package]]
