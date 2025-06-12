@@ -5,6 +5,8 @@ import mlflow
 import google.genai as genai
 from typing import Tuple
 
+import mlflow.gemini
+
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -31,7 +33,9 @@ def configure_mlflow(mlflow_tracking_uri: str, model_name: str = "gemini") -> No
     """Configure MLflow tracking URI and experiment."""
     mlflow.set_tracking_uri(mlflow_tracking_uri)
     mlflow.set_experiment(f"test-{model_name}")
-    mlflow.gemini.autolog()
+    mlflow.gemini.autolog(model_name=model_name, 
+                        tracking_uri=mlflow_tracking_uri,
+                          disable=False)
     logging.info("MLflow configured and autologging enabled.")
 
 def generate_content(client: genai.Client, model_name: str, prompt: str) -> str:
