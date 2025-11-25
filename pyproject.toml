@@ -4,7 +4,7 @@
 name = "google-gemini-gen-ai-samples"
 version = "0.1.0"
 description = "A collection of GenAI samples for Google Gemini."
-requires-python = "~=3.12"
+requires-python = ">=3.12, <3.13"
 readme = "README.md"
 authors = []
 
@@ -13,9 +13,9 @@ dependencies = [
     "requests",
     "pandas",
     "numpy",
-    "scikit-learn~=1.7.0",
-    "mlflow~=3.1.1",
-    "lagom~=2.7.5",
+    "scikit-learn",
+    "mlflow",
+    "lagom",
     "google-genai",
     "google-adk",
     "google-api-core"
@@ -32,7 +32,6 @@ dev = [
     "ruff",
     "ipykernel",
     "ipython",
-    "pre-commit",
     "nbstripout",
     "setuptools",
     "rich",
