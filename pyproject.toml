@@ -56,3 +56,7 @@ typeCheckingMode = "basic"
 
 [tool.ty.src]
 root = "./src"
+
+[tool.ruff]
+exclude = ["notebooks"]
+line-length = 200

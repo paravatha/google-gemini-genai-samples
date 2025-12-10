@@ -3,7 +3,6 @@ import time
 from mlx_lm.generate import generate
 from mlx_lm.utils import load
 
-
 # these models requires over 36 GB of memory
 # model_name = "mlx-community/medgemma-27b-text-it-8bit"
 # model_name = "mlx-community/medgemma-27b-text-it-bf16"
@@ -21,17 +20,14 @@ model_name = "mlx-community/medgemma-27b-text-it-4bit"
 
 model, tokenizer = load(model_name)
 start_time = time.time()
-prompt = (
-    "You are a medical expert answering medical questions re "
-    "You will answer in a concise way and in a single sentence. "
-)
+prompt = "You are a medical expert answering medical questions re You will answer in a concise way and in a single sentence. "
 
 question = "What is the treatment for VTE?"
 
 # Use the prompt as-is, since apply_chat_template is not supported by this tokenizer.
 
 
-response = generate(model, tokenizer, prompt=prompt+question, verbose=False)
+response = generate(model, tokenizer, prompt=prompt + question, verbose=False)
 end_time = time.time()
 
 print(f"Using model: {model_name} ")

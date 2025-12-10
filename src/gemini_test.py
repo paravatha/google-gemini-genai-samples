@@ -1,14 +1,15 @@
-import os
 import logging
-from dotenv import load_dotenv
-import mlflow
-import google.genai as genai
+import os
 from typing import Tuple
 
+import google.genai as genai
+import mlflow
 import mlflow.gemini
+from dotenv import load_dotenv
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+
 
 def load_env_variables() -> Tuple[str, str, str]:
     """Load and validate required environment variables."""
@@ -29,14 +30,14 @@ def load_env_variables() -> Tuple[str, str, str]:
     logging.info(f"Gemini Model Name: {gemini_model_name}")
     return mlflow_tracking_uri, gemini_model_name, google_api_key
 
+
 def configure_mlflow(mlflow_tracking_uri: str, model_name: str = "gemini") -> None:
     """Configure MLflow tracking URI and experiment."""
     mlflow.set_tracking_uri(mlflow_tracking_uri)
     mlflow.set_experiment(f"test-{model_name}")
-    mlflow.gemini.autolog(model_name=model_name, 
-                        tracking_uri=mlflow_tracking_uri,
-                          disable=False)
+    mlflow.gemini.autolog(model_name=model_name, tracking_uri=mlflow_tracking_uri, disable=False)
     logging.info("MLflow configured and autologging enabled.")
+
 
 def generate_content(client: genai.Client, model_name: str, prompt: str) -> str:
     """Generate content using the Gemini model and return the response text."""
@@ -53,6 +54,7 @@ def generate_content(client: genai.Client, model_name: str, prompt: str) -> str:
         logging.error(f"Error generating content: {e}")
         return ""
 
+
 def main() -> None:
     """Main function to execute the script."""
     try:
@@ -67,6 +69,7 @@ def main() -> None:
             print("No response generated.")
     except Exception as e:
         logging.error(f"Fatal error: {e}")
+
 
 if __name__ == "__main__":
     main()

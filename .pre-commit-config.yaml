@@ -36,6 +36,6 @@ repos:
         args: ["--all-groups", "--output-file=requirements.dev.txt"]
 
   - repo: https://github.com/kynan/nbstripout
-    rev: 0.8.1
+    rev: 0.8.2
     hooks:
       - id: nbstripout
